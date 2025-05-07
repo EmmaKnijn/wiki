@@ -10,7 +10,13 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/EmmaKnijn/wiki',
 			},
-			sidebar: [],
+			sidebar: [
+				{
+					label: 'Products',
+					// Autogenerate a group of links for the 'constellations' directory.
+					autogenerate: { directory: 'products' },
+				}
+			]
 		}),
 	],
 });
